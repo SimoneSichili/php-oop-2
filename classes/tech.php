@@ -17,6 +17,10 @@ class Tech extends Product {
         return parent::getFullName() . " " . $this->model;
     }
 
+    public function getDiscountPrice($discount) {
+        return parent::getDiscountPrice($discount) - 10;
+    }
+
 }
 
 // $tech = new Tech("Smartphone", "Samsung", 200, "S20");
